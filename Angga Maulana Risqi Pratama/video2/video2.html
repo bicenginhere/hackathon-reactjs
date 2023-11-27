@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type = "text/javascript">
+        const card = (props) =>{
+            return(
+                <div class="card">
+                    <p class="title">props.name</p>
+                    <p>props.job</p>
+                </div>
+            )
+        }
+        const App = () => {
+            return(
+                <div>
+                 <card name="angga maulana" job="frontend" />   
+                 <card name="maul" job="project manager" />   
+                 <card name="risqi" job="frontend" />   
+                </div>
+            )
+        }
+        
+        ReactDOM.render(<App />,
+        document.querySelector('#root'))
+    </script>
+    <style type="text/css"> 
+      .card{
+        border: 1px solid #fa0909;
+        border-radius: 8px;
+        padding: 20px;
+        width: 150px;
+        box-shadow: 0px 2px 2px #fd0303;
+        display: inline-block;
+        margin-right: 20px;
+      }
+      .title{
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+      .p{
+        margin: 0px;
+      }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
